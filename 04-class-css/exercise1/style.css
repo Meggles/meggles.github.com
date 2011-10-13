@@ -51,20 +51,17 @@ table {
 
 #main-content {
 	margin-left: 20px;
-	height: 400px;
+	width: 100%;
 	position:relative;
 	}
 	
 .article-1 {
-	position:relative;
 	width: 30%;
 	float:left;
 	padding:30px;
-
 	}
 
 .article-2 {
-	position:relative;
 	width: 30%;
 	float: left;
 	padding:30px;
