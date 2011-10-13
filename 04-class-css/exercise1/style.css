@@ -1,5 +1,4 @@
 
-
 /* Meyer Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,5 +48,61 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+#main-content {
+	margin-left: 20px;
+	height: 400px;
+	position:relative;
+	}
+	
+.article-1 {
+	position:relative;
+	width: 30%;
+	float:left;
+	padding:30px;
+
+	}
+
+.article-2 {
+	position:relative;
+	width: 30%;
+	float: left;
+	padding:30px;
+	}
+	
+h1 {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:1.5em;
+	position:relative;
+	float:top;
+	}
+	
+h2 {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:1em;
+	position:relative;
+	float:top;
+	margin-top: 1em;	
+
+	}
+	
+p {
+	font-family:Arial;
+	font-size:.75em;
+	line-height:1.5em;
+	margin: 20px, 10px, 0px, 0px;	
+	position:relative;
+	margin-top: 1em;	
+
+	}
+	
+img.float-left{
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	}
+
 
 
