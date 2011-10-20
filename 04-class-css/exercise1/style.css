@@ -50,8 +50,6 @@ table {
 }
 
 #main-content {
-	margin-left: 20px;
-	width: 100%;
 	position:relative;
 	}
 	
@@ -61,26 +59,16 @@ table {
 	padding:30px;
 	}
 
-.article-2 {
-	width: 30%;
-	float: left;
-	padding:30px;
-	}
-	
 h1 {
 	font-family:Arial;
 	font-weight:bold;
 	font-size:1.5em;
-	position:relative;
-	float:top;
 	}
 	
 h2 {
 	font-family:Arial;
 	font-weight:bold;
 	font-size:1em;
-	position:relative;
-	float:top;
 	margin-top: 1em;	
 
 	}
@@ -90,12 +78,11 @@ p {
 	font-size:.75em;
 	line-height:1.5em;
 	margin: 20px, 10px, 0px, 0px;	
-	position:relative;
 	margin-top: 1em;	
 
 	}
 	
-img.float-left{
+img {
 	float:left;
 	margin-right: 20px;
 	margin-bottom: 20px;
