@@ -76,7 +76,7 @@ footer#footer  {
 
 h2 {
 	font-family: Georgia;
-	font-size: 18px;
+	font-size: 26px;
 	font-weight: bold;
 	padding: 10px 0px;
 	}
@@ -84,6 +84,7 @@ h2 {
 p {
 	font-family: Georgia;
 	font-size: 16px;
+	line-height: 1.5em;
 }
 
 /* Clearfix */
@@ -100,14 +101,59 @@ p {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-#site-header h1 a {
+#site-header {
+	position:relative;
+	width: 1000px;
+	padding: 20px;
+	}
+
+h1 a {
 	display:block; 
  	width:445px; 
  	height:95px;  
- 	background:url(images/dogvscat-logo.gif) no-repeat top;
  	padding: 20px;
- 	text-indent:-9999px; 
  }
+
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('League_Gothic-webfont.eot');
+    src: url('League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('League_Gothic-webfont.woff') format('woff'),
+         url('League_Gothic-webfont.ttf') format('truetype'),
+         url('League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header#site-header {
+  margin:0 auto;
+  width:1000px;
+}
+
+h1 a {
+	font-size:7em;
+	font-family: 'LeagueGothicRegular', 'Arial';
+	text-decoration: none;
+	color: black;
+	
+	}
+	
+	
+h1 a .word2 {
+	font-size:.75em;
+	font-family: 'Georgia';
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+	color: grey;
+	border-top: double grey 5px;
+	border-bottom: double grey 5px;
+	}
+	
+header#site-header {
+	position: relative;
+}
 
 
 #top-nav  {
@@ -124,8 +170,8 @@ html[xmlns] .clearfix { display: block; }
 	padding: 10px 0px;	
 	border-top: 4px solid black;
     border-bottom: 4px solid black; 
-
 }
+
 #top-nav li a {
 	display: block;
 	padding: 0px 5px;
@@ -134,7 +180,7 @@ html[xmlns] .clearfix { display: block; }
 	text-decoration: none;
 	font-family: Georgia;
 	font-weight: bold;
-	}
+}
  
 #top-nav li {
 	float:left;
@@ -144,7 +190,7 @@ html[xmlns] .clearfix { display: block; }
 	text-decoration: none;
 	font-family: Georgia;
 	font-weight: bold:	
-	}
+}
 
 #content {
 	position: relative;
@@ -169,6 +215,12 @@ html[xmlns] .clearfix { display: block; }
 	padding: 10px 0px;	
 	border-top: 4px solid black;
 }
+
+#footer {
+	font: Georgia 12px black;
+	text-decoration:none;
+	
+	}
 	
 
 
