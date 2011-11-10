@@ -49,24 +49,26 @@ table {
 	border-spacing: 0;
 }
 
-#main-content {
+
+
+section {
 	position:relative;
+	font-family:Arial;
+	width: 1000px;
 	}
 	
-.article-1 {
-	width: 30%;
+article {
+	width: 430px;
 	float:left;
 	padding:30px;
 	}
 
 h1 {
-	font-family:Arial;
 	font-weight:bold;
 	font-size:1.5em;
 	}
 	
 h2 {
-	font-family:Arial;
 	font-weight:bold;
 	font-size:1em;
 	margin-top: 1em;	
@@ -74,10 +76,8 @@ h2 {
 	}
 	
 p {
-	font-family:Arial;
 	font-size:.75em;
 	line-height:1.5em;
-	margin: 20px, 10px, 0px, 0px;	
 	margin-top: 1em;	
 
 	}

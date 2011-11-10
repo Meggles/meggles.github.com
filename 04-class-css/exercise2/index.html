@@ -7,11 +7,12 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id='site-wrapper'>
 <header id='site-header'>
-  <h1><a href='/'>Evil Genius Robot Supply</a></h1>
+  <h1 id='logo'><a href='/'>Evil Genius Robot Supply</a></h1>
   <nav id='top-nav'>
     <a href='#'>Login</a> | <a href='#'>Contact Us</a>
   </nav>
@@ -22,17 +23,15 @@
 <nav id='main-menu'>
   <ul>
     <li>
-    	<a href="#">Home</a></li>
+    	<a href="#">SHOP</a></li>
     <li>
-    	<a href="#">Shop</a></li>
+    	<a href="#">ABOUT US</a></li>
     <li>
-    	<a href="#">About Us</a></li>
+    	<a href="#">NEW PRODUCTS</a></li>
     <li>
-    	<a href="#">New Products</a></li>
+    	<a href="#">CONTACT US</a></li>
     <li>
-    	<a href="#">Contact Us</a></li>
-    <li>
-    	<a href="#">Faqs</a></li>
+    	<a href="#" id="last-link">FAQS</a></li>
   </ul>
 </nav>
 </div> <!-- end #menu-wrapper -->
@@ -41,7 +40,20 @@
   <div id='content'>
     <article id='page'>
         <h1>Header 1</h1>
-        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+        <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+        <p>Dictumst. Nullam malesuada molestie lorem. Nunc non mauris. Nam accumsan
+          tortor gravida elit. Cras porttitor.</p>
+
+        <p>Praesent vel enim sed eros luctus imperdiet. Mauris neque ante, placerat at,
+          mollis vitae, faucibus quis, leo. Ut feugiat. Vivamus urna quam, congue
+          vulputate, convallis non, cursus cursus, risus. Quisque aliquet. Donec
+          vulputate egestas elit. In hac habitasse platea dictumst. Vestibulum blandit dignissim dui. Maecenas vitae magna non felis
+          ornare.
+          </p>
+
+
+
+        <h2>LOREM IPSUM DOLOR SIT AMET</h2>
         <p>Dictumst. Nullam malesuada molestie lorem. Nunc non mauris. Nam accumsan
           tortor gravida elit. Cras porttitor.</p>
 
@@ -49,31 +61,13 @@
           mollis vitae, faucibus quis, leo. Ut feugiat. Vivamus urna quam, congue
           vulputate, convallis non, cursus cursus, risus. Quisque aliquet. Donec
           vulputate egestas elit. Morbi dictum, sem sit amet aliquam euismod, odio
-          tortor pellentesque odio, ac ultrices enim nibh sed quam. Integer tortor
-          velit, condimentum a, vestibulum eget, sagittis nec, neque. Aenean est urna,
-          bibendum et, imperdiet at, rhoncus in, arcu. In hac habitasse platea
-          dictumst. Vestibulum blandit dignissim dui. Maecenas vitae magna non felis
-          ornare.</p>
-
-
-
-        <h2>Lorem Ipsum Dolor Sit Amet</h2>
-        <p>Dictumst. Nullam malesuada molestie lorem. Nunc non mauris. Nam accumsan
-          tortor gravida elit. Cras porttitor.</p>
-
-        <p>Praesent vel enim sed eros luctus imperdiet. Mauris neque ante, placerat at,
-          mollis vitae, faucibus quis, leo. Ut feugiat. Vivamus urna quam, congue
-          vulputate, convallis non, cursus cursus, risus. Quisque aliquet. Donec
-          vulputate egestas elit. Morbi dictum, sem sit amet aliquam euismod, odio
-          tortor pellentesque odio, ac ultrices enim nibh sed quam. Integer tortor
-          velit, condimentum a, vestibulum eget, sagittis nec, neque. Aenean est urna,
-          bibendum et, imperdiet at, rhoncus in, arcu. In hac habitasse platea
+          tortor pellentesque odio, ac ultrices enim nibh sed quam. In hac habitasse platea
           dictumst. Vestibulum blandit dignissim dui. Maecenas vitae magna non felis
           ornare.</p>
 
     </article>
     <aside id='sidebar'>
-      <h1>Dolor sit Amet</h1>
+      <h2>DOLOR SIT AMET</h2>
       <ul>
         <li>
         	<a href="#">Lorem Ipsum</a></li>
@@ -101,18 +95,18 @@
 <div id='footer-wrapper'>
   <footer id='site-footer'>
     <section id='footer-contact'>
-      <h1>Contact Us</h1>
+      <h1>CONTACT US</h1>
       <p>Praesent vel enim sed eros luctus imperdiet. Mauris neque ante, placerat at,
-        mollis vitae, faucibus quis, leo. Ut feugiat.</p>
+        mollis vitae, <a href="mailto:faucibus@quisleo.com">faucibus quisleo</a>. Ut feugiat.</p>
     </section>
 
     <section id='footer-follow'>
-      <h1>Follow Us</h1>
+      <h1>FOLLOW US</h1>
 
       <ul>
-        <li><a href='#'><img src='images/facebook.png'/></a></li>
-        <li><a href='#'><img src='images/rss.png'/></a></li>
-        <li><a href='#'><img src='images/twitter.png'/></a></li>
+        <li id='left-icon'><a href='#'><img src='images/facebook.png'/></a></li>
+        <li id='center-icon'><a href='#'><img src='images/rss.png'/></a></li>
+        <li id='right-icon'><a href='#'><img src='images/twitter.png'/></a></li>
       </ul>
     </section>
   </footer>
