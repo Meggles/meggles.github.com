@@ -50,43 +50,6 @@ table {
 	border-spacing: 0;
 }
 
-
-/* Center Content */
-
-header#site-header { 
-  margin:0 auto;
-  width:1000px;
-}
-
-nav#top-nav { 
-  margin:0 auto;
-  width:1000px;
-}
-
-section#content { 
-  margin:0 auto;
-  width:1000px;
-}
-
-footer#footer  {
-	margin:0 auto;
-	width:1000px;
-}
-
-
-h2 {
-	font-family: Georgia;
-	font-size: 26px;
-	font-weight: bold;
-	padding: 10px 0px;
-	}
-
-p {
-	font-family: Georgia;
-	font-size: 16px;
-	line-height: 1.5em;
-}
-
 /* Clearfix */
 .clearfix:after {
 	content: ".";
@@ -101,20 +64,6 @@ p {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-#site-header {
-	position:relative;
-	width: 1000px;
-	padding: 20px;
-	}
-
-h1 a {
-	display:block; 
- 	width:445px; 
- 	height:95px;  
- 	padding: 20px;
- }
-
-
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('League_Gothic-webfont.eot');
@@ -126,101 +75,165 @@ h1 a {
     font-style: normal;
 }
 
+
+/* POSITIONING */
+
+/* Center Content */
+
+div#site-wrapper {
+	margin: 0 auto;
+	width: 525px;
+	}
+
+body {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+nav ul { 
+	margin: 0 auto;
+	width: 71%;
+}
+	
+/*
 header#site-header {
   margin:0 auto;
   width:1000px;
 }
+*/
 
 h1 a {
-	font-size:7em;
-	font-family: 'LeagueGothicRegular', 'Arial';
-	text-decoration: none;
-	color: black;
-	
-	}
-	
-	
-h1 a .word2 {
-	font-size:.75em;
-	font-family: 'Georgia';
-	font-style: italic;
-	font-weight: bold;
-	text-decoration: none;
-	color: grey;
-	border-top: double grey 5px;
-	border-bottom: double grey 5px;
-	}
-	
-header#site-header {
+	text-align: center;
+	display:block; 
+ 	height:95px;  
+ 	padding: 20px 0;
+ 	margin: 0 auto;
+ 	width: 100%;
+ }
+
+div#menu-wrapper {
 	position: relative;
+	width: 100%;
+	padding: 0 0 60px 0;
 }
 
+div#content-wrapper {
+	position: relative;
+	width: 100%;
+}
 
 #top-nav  {
     position:absolute;
-    display:block;
-    top:100px;
-    right:20px;
-    padding:10px 10px;
-    margin: 20px 20px;
-}
-
-#top-nav {
-	clear: both;
-	padding: 10px 0px;	
-	border-top: 4px solid black;
+    width: 100%;
+    padding:10px 0px;
+    border-top: 4px solid black;
     border-bottom: 4px solid black; 
+   	text-align: center;
+
 }
 
-#top-nav li a {
+nav li {
+	float: left;
+	padding: 0px 10px;
+}
+	
+section {
+	position: relative;
 	display: block;
-	padding: 0px 5px;
-	font-size: 20px;
+}
+
+article {
+	float: left;
+	width: 450px;
+	padding: 20px;
+}
+
+footer {
+	clear: both;
+	border-top: 4px solid black;
+	padding-top: 20px;
+}
+
+#copyright {
+	float: right;
+	}
+
+
+/*
+span.word2-inner {
+	position: relative;
+	height: 10px;
+	border-bottom: grey medium solid;
+	border-top: grey medium solid; 
+}
+
+span.word2-outer {
+	position: absolute;
+	height: 30px;
+	border-bottom: grey light solid;
+	border-top: grey light solid; 
+}d
+*/
+
+/* STYLING */
+
+h1 a {
+	font-size: 7em;
+	font-family: 'LeagueGothicRegular', 'Arial';
+	text-decoration: none;
+	color: black;
+	}
+
+
+
+h1 a .word2-inner {
+	font-size: .5em;
+	color: grey;
+	font-family: 'Georgia';
+	font-style: italic;
+	font-weight: bold;
+	vertical-align: 30%;
+	text-underline-position: 5px;
+	line-height: 1em;
+	border-bottom: grey medium double;
+	border-top: grey medium double;
+	
+/*	text-decoration: underline overline;
+	text-underline-position: ;
+	border-top: double grey 5px;
+	*/
+	}
+
+nav li a {
+	font-size: 1.5em;
 	color: black;
 	text-decoration: none;
 	font-family: Georgia;
 	font-weight: bold;
 }
- 
-#top-nav li {
-	float:left;
-	padding: 0px 5px;
-	font: 20px;
-	color: black;
-	text-decoration: none;
+
+h2 {
 	font-family: Georgia;
-	font-weight: bold:	
+	font-size: 26px;
+	font-weight: bold;
+	padding: 10px 0px;
+	}
+
+p {
+	font-family: Georgia;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
-#content {
-	position: relative;
-}
-
-.article-1 {
-	width: 350px;
-	float:left;
-	margin:30px;
-	padding:30px;
-}
-	
-.article-2 {
-	width: 350px;
-	float:left;
-	margin: 30px;
-	padding:30px;
-}
-
-#footer {
-	clear: both;
-	padding: 10px 0px;	
-	border-top: 4px solid black;
-}
-
-#footer {
+footer {
 	font: Georgia 12px black;
 	text-decoration:none;
-	
 	}
+	
+span a {
+	text-decoration: none;
+	color: maroon;
+}
 	
 
 
