@@ -13,12 +13,13 @@ $(document).ready(function() {
     if (  locationPath == thisPath
     && (location.hostname == this.hostname || !this.hostname)
     && this.hash.replace(/#/,'') ) {
-      var $target = $(this.hash), target = this.hash;
-      if (target) {
+     var target = this.hash.replace('#','');
+     var $target = $('a[name='+target+']');
+     if ($target.offset() != undefined) {
         var targetOffset = $target.offset().top;
         $(this).click(function(event) {
           event.preventDefault();
-          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+          $(scrollElem).animate({scrollTop: targetOffset}, 1500, function() {
             location.hash = target;
           });
         });
